@@ -1,0 +1,185 @@
+/* Elementos Base */
+:root{
+    /* Definição de variáveis, no caso cores */
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif; /*TODO*/
+    color: white;
+}
+
+.blur{
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px) !important;
+}
+/* Header */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .sidebar-logo{
+    display: none;
+}
+header .container .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; /*TODO*/
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+header .container .navLink{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+header .container .navLink:hover{
+    color: #FFF;
+    transition: .3s ease-in;
+}
+
+
+/* Filme Principal */
+
+.filme-pricipal{
+    font-size: 1.5rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/loki-banner.jpg');/*TODO*/
+    height: 80vh;/*TODO*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.filme-pricipal .container{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 70%;
+}
+
+.filme-pricipal .container .titulo{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*TODO*/
+    margin-top: 25%;
+}
+
+.filme-pricipal .container .descricao{
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.filme-pricipal .botoes{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.filme-pricipal .botoes .btn{
+    background-color: rgba(0,0,0,.60);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease-out;
+    border-radius: 5px;
+}
+
+.filme-pricipal .botoes .btn:hover{
+    background-color: white;
+    color: black;
+    font-style: italic;
+}
+
+.filme-pricipal .botoes i{
+    /* margin-left: 0.2rem; */
+    margin-right: 8px;
+}
+
+/* Carrossel */
+.carrossel-producoes{
+    position: relative;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    z-index: -1 !important;
+}
+.carrossel-producoes .owl-carousel .item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.custom-nav{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+}
+
+.carrossel-producoes{
+    display: block !important;
+    
+}
+.owl-carousel{
+    display: block !important;
+    
+}
+.owl-prev, .owl-next {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 320px !important;
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%) !important;
+    border: none;
+    border-radius: 5px !important;
+    width: 2rem;
+    height: 92% !important;
+    padding: 4px 7px;
+    margin: 1px 5px;
+    cursor: pointer;
+    border-radius: 20px !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.owl-prev i, .owl-next i{
+    font-size: 2.5rem;
+    color: white;
+}
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+.owl-dots {
+    display: none !important;
+}
