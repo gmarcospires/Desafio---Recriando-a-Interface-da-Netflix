@@ -26,9 +26,14 @@ body{
 
 header{
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0px;
+    background-color: var(--preto);
+    opacity: 0.9;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
 header .container{
     display: flex;
     flex-direction: row;
@@ -41,8 +46,12 @@ header .container .sidebar-logo{
 header .container .logo{
     color: var(--vermelho);
     font-family: 'Arial Black', Times; /*TODO*/
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition-timing-function: linear;
 }
 
 header .container .navLink{
@@ -50,21 +59,25 @@ header .container .navLink{
     color: #AAA;
     margin-right: 1rem;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 header .container .navLink:hover{
     color: #FFF;
     transition: .3s ease-in;
 }
-
+.container .sidebar-logo .logo_name, 
+    .container .sidebar-logo .fa-bars{
+        display: none;
+    }
 
 /* Filme Principal */
 
 .filme-pricipal{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color:#FFF;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/loki-banner.jpg');/*TODO*/
-    height: 80vh;/*TODO*/
+    height: 100%;/*TODO*/
     background-size: cover;
     display: flex;
     flex-direction: column !important;
@@ -76,7 +89,7 @@ header .container .navLink:hover{
 .filme-pricipal .container{
     margin-right: 2rem;
     margin-left: 2rem;
-    width: 70%;
+    width: 100%;
 }
 
 .filme-pricipal .container .titulo{
@@ -120,66 +133,37 @@ header .container .navLink:hover{
 
 /* Carrossel */
 .carrossel-producoes{
-    position: relative;
-}
-.box-filme{
     height: 100%;
     width: 100%;
+    position: relative;
+    background-color: var(--preto);
+    padding: 1rem;
+} 
+
+ .box-filme{
+    max-height: 400px;
+    max-width: 400px;
+    width: auto;
     display: block;
     border-radius: 20px;
-    z-index: -1 !important;
-}
-.carrossel-producoes .owl-carousel .item{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: 10px;
 }
 
-.custom-nav{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    left: 0;
-    right: 0;
-    align-items: center;
-    display: flex;
-    z-index: 1;
-}
-
-.carrossel-producoes{
-    display: block !important;
-    
-}
-.owl-carousel{
-    display: block !important;
-    
-}
 .owl-prev, .owl-next {
     display: flex;
     align-items: center;
     position: absolute;
     height: 320px !important;
-    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%) !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,.50)100%) !important;
     border: none;
     border-radius: 5px !important;
-    width: 2rem;
+    width: 1.7rem !important;
     height: 92% !important;
     padding: 4px 7px;
     margin: 1px 5px;
     cursor: pointer;
     border-radius: 20px !important;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+    margin: 1rem !important;
 }
-.owl-prev i, .owl-next i{
-    font-size: 2.5rem;
-    color: white;
-}
-.owl-prev {
-    left: 0;
-}
-.owl-next {
-    right: 0;
-}
-.owl-dots {
-    display: none !important;
-}
+
+

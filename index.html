@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <!-- Owl css -->
-    <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css"> -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" /> --> 
     <!-- Responsividade -->
     <link rel="stylesheet" href="./style/responsive.css">
     <title>NETFLIX CLONE</title>
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="fixed-top ">
         <div class="container">
             <div class="sidebar-logo">
                 <span class="logo_name">
@@ -23,7 +28,7 @@
                 </span>
             </div>
             <h2 class="logo">NETFLIX</h2>
-            <nav class="navbar">
+            <nav class="myNavbar">
                 <a class="navLink" href="#">Início</a>
                 <a class="navLink" href="#">Séries</a>
                 <a class="navLink" href="#">Filmes</a>
@@ -33,7 +38,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="filme-pricipal">
             <div class="container">
                 <!-- TODO -->
@@ -55,31 +60,51 @@
             </div>
         </div>
     </main>
-    <div class="carrossel-producoes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="./img/banner-Umbrella.jpg" alt="">
+    <div id="carousel" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
+        data-bs-touch="true" data-bs-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="item carousel-item active">
+                <img class="box-filme d-block w-100" src="./img/banner-Umbrella.jpg" alt="">
             </div>
-            <div class="item">
-                <img class="box-filme" src="./img/banner-Loki.jpg" alt="">
+            <div class="item carousel-item ">
+                <img class="box-filme d-block w-100" src="./img/banner-Loki.jpg" alt="">
             </div>
-            <div class="item">
-                <img class="box-filme" src="./img/banner-WandaVision.jpg" alt="">
+            <div class="item carousel-item">
+                <img class="box-filme d-block w-100" src="./img/banner-WandaVision.jpg" alt="">
             </div>
         </div>
         <div class="">
-            <div class="owl-controls">
-                <div class="custom-nav owl-nav"></div>
-            </div>
+            <!-- <button class="carousel-control-prev owl-prev" type="button" data-bs-target="#carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next owl-next" type="button" data-bs-target="#carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
     </div>
-    <script src="./js/main.js"></script>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/eea6fd512d.js" crossorigin="anonymous"></script>
     <!-- Owl -->
-    <script src="./js/Owl/jquery.min.js"></script>
+    <!-- <script src="./js/Owl/jquery.min.js"></script>
     <script src="./js/Owl/owl.carousel.min.js"></script>
-    <script src="./js/Owl/setup.js"></script>
+     -->
+    <script src="./js/main.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
