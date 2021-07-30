@@ -84,18 +84,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(50%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-50%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
@@ -190,18 +190,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
@@ -242,18 +242,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
@@ -297,18 +297,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-33.3%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
@@ -336,18 +336,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(20%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-20%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
@@ -412,18 +412,18 @@
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(20%);
-      /* transform: translate3d(100%); */
+      
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-20%);
-      /* transform: translate3d(100%); */
+      
     }
     .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-    /* transform: translate3d(100%); */
+    
 }
 .box-filme{
     display: flex;
