@@ -29,7 +29,7 @@
         // "https://api.themoviedb.org/3/keyword/849/movies?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR";
         // "https://api.themoviedb.org/3/trending/movie/week?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR";
         // "https://api.themoviedb.org/3/movie/popular?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR";
-        var divs = document.getElementById("carousel-inner3");
+        var divs = document.getElementById("carousel-inner4");
         var pesq = 'anime'
       }
     
