@@ -13,9 +13,9 @@
 
 
 body{
-    background-color: var(--preto);
+    background-color: var(--preto) !important;
     font-family: 'Times New Roman', Times, serif; /*TODO*/
-    color: white;
+    color: #FFF;
 }
 
 .blur{
@@ -139,6 +139,13 @@ header .container .navLink:hover{
     background-color: var(--preto);
     padding: 1rem;
 } 
+.subTitulo{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*TODO*/
+}
 
  .box-filme{
     max-height: 400px;
@@ -158,12 +165,13 @@ header .container .navLink:hover{
     border: none;
     border-radius: 5px !important;
     width: 1.7rem !important;
-    height: 92% !important;
+    height: auto!important;
     padding: 4px 7px;
     margin: 1px 5px;
     cursor: pointer;
     border-radius: 20px !important;
     margin: 1rem !important;
+    
 }
 
 
