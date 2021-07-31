@@ -30,7 +30,7 @@
         // "https://api.themoviedb.org/3/trending/movie/week?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR";
         // "https://api.themoviedb.org/3/movie/popular?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR";
         var divs = document.getElementById("carousel-inner4");
-        var pesq = 'anime'
+         pesq = 'anime'
       }
     
 fetch(url)
@@ -43,10 +43,10 @@ fetch(url)
         for (var i = 0; i < ret.results.length; i++) {
             //divs[i]
             element = ret.results[i];
-            if(pesq != undefined){
-                var a = ret.genre_ids;
-                a.
-            }
+            // if(pesq != undefined){
+            //     var a = ret.genre_ids;
+            //     a.
+            // }
             let imagem = document.createElement("img");
             imagem.src =
                 "https://image.tmdb.org/t/p/w600_and_h900_face" + element.poster_path;
