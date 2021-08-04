@@ -1,6 +1,6 @@
 # Desafio: Recriando a Interface doa Netflix :tv: ​
 
-Olá! Bem vindo ao desafios "Recriando a Interface da Netflix" feito no Bootcamp MRV Front End SPA Developer.  :wave:
+Olá! Bem vindo ao desafios "Recriando a Interface da Netflix" feito no Bootcamp da plataforma [Digital Innovation One](https://digitalinnovation.one/).  :wave:
 
 ## O Desafio
 
