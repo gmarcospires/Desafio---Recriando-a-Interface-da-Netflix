@@ -7,20 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <!-- Owl css -->
-    <!-- <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css"> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&family=Open+Sans:wght@700&display=swap"
+        rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--  MDB -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" /> --> 
-    <!-- Responsividade -->
     <link rel="stylesheet" href="./style/responsive.css">
     <title>NETFLIX CLONE</title>
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-grow d-block"
+                style="width: 10rem; height: 10rem;" role="status">
+            </div>
+        </div>
+    </div>
     <header id="header" class="fixed-top ">
         <div class="container">
             <div class="sidebar-logo">
@@ -28,13 +35,12 @@
                     <i class="fas fa-bars"></i>
                 </span>
             </div>
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">SERIESFLIX</h2>
             <nav class="myNavbar">
-                <a class="navLink" href="#">Início</a>
-                <a class="navLink" href="#">Séries</a>
-                <a class="navLink" href="#">Filmes</a>
-                <a class="navLink" href="#">Documentários</a>
-                <a class="navLink" href="#">Animes</a>
+                <a class="navLink" href="#main">Início</a>
+                <a class="navLink" href="#tvPop_prog">Séries</a>
+                <a class="navLink" href="#marvel_prog">Filmes</a>
+                <a class="navLink" href="#anime_prog">Animes</a>
             </nav>
         </div>
     </header>
@@ -43,17 +49,14 @@
         <div class="filme-pricipal">
             <div class="container">
                 <!-- TODO -->
-                <h3 class="titulo">LOKI</h3>
-                <p class="descricao">Começando imediatamente depois que Loki rouba o Tesseract (de novo), ele se
-                    encontra diante da Autoridade de Variação Temporal, uma organização burocrática que existe fora do
-                    tempo e espaço. Forçado a responder por seus crimes contra a linha do tempo, ele recebe uma escolha:
-                    Ser deletado da realidade ou ajudar a capturar uma ameaça ainda maior.</p>
+                <h3 id="mainTitulo" class="titulo"></h3>
+                <p id="mainDesc" class="descricao"></p>
                 <div class="botoes">
-                    <button class="btn" role="button">
+                    <button class="btn" role="button" id="mainPlay">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button class="btn" role="button">
+                    <button class="btn" role="button" id="mainInfo">
                         <i class="fas fa-info-circle"></i>
                         SAIBA MAIS
                     </button>
@@ -61,105 +64,97 @@
             </div>
         </div>
     </main>
-    <!-- <div id="carousel" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
-        data-bs-touch="true" data-bs-interval="false">
-        <div class="carousel-inner" role="listbox">
-            <div class="item carousel-item active">
-                <img class="box-filme d-block w-100" src="./img/banner-Umbrella.jpg" alt="">
-            </div>
-            <div class="item carousel-item ">
-                <img class="box-filme d-block w-100" src="./img/banner-Loki.jpg" alt="">
-            </div>
-            <div class="item carousel-item">
-                <img class="box-filme d-block w-100" src="./img/banner-WandaVision.jpg" alt="">
-            </div>
-        </div>
-        <div class="">
-            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div> -->
-    <h3 id="populares" class="subTitulo">Tendências</h3>
-    <div id="carousel2" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
-        data-bs-touch="true" data-bs-interval="false">
-       
+    <h3 id="filmPop_prog" class="subTitulo">Tendências - Filmes</h3>
+    <div id="carousel2" class="carrossel-producoes carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+        data-bs-interval="false">
         <div class="carousel-inner" id="carousel-inner" role="listbox">
-            
         </div>
         <div class="">
-            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel2" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel2" role="button"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel2" role="button" data-bs-slide="next">
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel2" role="button"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
     </div>
-    <h3 id="populares" class="subTitulo">Marvel</h3>
-    <div id="carousel3" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
-        data-bs-touch="true" data-bs-interval="false">
-       
-        <div class="carousel-inner" id="carousel-inner2" role="listbox">
-            
-        </div>
-        <div class="">
-            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel3" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel3" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div>
-    <h3 id="populares" class="subTitulo">DC</h3>
-    <div id="carousel4" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
-        data-bs-touch="true" data-bs-interval="false">
-       
-        <div class="carousel-inner" id="carousel-inner3" role="listbox">
-            
-        </div>
-        <div class="">
-            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel4" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel4" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div>
-    <h3 id="populares" class="subTitulo">ANIMES</h3>
-    <div id="carousel5" class="carrossel-producoes carousel slide" data-bs-ride="carousel"
-        data-bs-touch="true" data-bs-interval="false">
-       
+    <h3 id="tvPop_prog" class="subTitulo">Em alta - Séries</h3>
+    <div id="carousel6" class="carrossel-producoes carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+        data-bs-interval="false">
         <div class="carousel-inner" id="carousel-inner5" role="listbox">
-            
         </div>
         <div class="">
-            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel5" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel6" role="button"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel5" role="button" data-bs-slide="next">
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel6" role="button"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
     </div>
+    <h3 id="marvel_prog" class="subTitulo">Marvel</h3>
+    <div id="carousel3" class="carrossel-producoes carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+        data-bs-interval="false">
+        <div class="carousel-inner" id="carousel-inner2" role="listbox">
+        </div>
+        <div class="">
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel3" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel3" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <h3 id="dc_prog" class="subTitulo">DC Comics</h3>
+    <div id="carousel4" class="carrossel-producoes carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+        data-bs-interval="false">
+        <div class="carousel-inner" id="carousel-inner3" role="listbox">
+        </div>
+        <div class="">
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel4" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel4" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <h3 id="anime_prog" class="subTitulo">ANIMES</h3>
+    <div id="carousel5" class="carrossel-producoes carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+        data-bs-interval="false">
+        <div class="carousel-inner" id="carousel-inner4" role="listbox">
+        </div>
+        <div class="">
+            <a class="carousel-control-prev owl-prev w-aut custom-nav" href="#carousel5" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next owl-next w-aut custom-nav" href="#carousel5" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div id="modals">
 
+    </div>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/eea6fd512d.js" crossorigin="anonymous"></script>
-    <!-- Owl -->
-    <!-- <script src="./js/Owl/jquery.min.js"></script>
-    <script src="./js/Owl/owl.carousel.min.js"></script>
-     -->
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        
-        <script src="./js/main.js"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/preloader.js"></script>
 </body>
 
 </html>

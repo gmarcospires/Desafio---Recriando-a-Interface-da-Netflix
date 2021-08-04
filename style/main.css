@@ -1,8 +1,9 @@
 /* Elementos Base */
 :root{
-    /* Definição de variáveis, no caso cores */
     --vermelho: #e50914;
     --preto: #141414;
+    --titulo: 'Open Sans', sans-serif;
+    --texto: 'Nunito', sans-serif;
 }
 
 *{
@@ -14,19 +15,32 @@
 
 body{
     background-color: var(--preto) !important;
-    font-family: 'Times New Roman', Times, serif; /*TODO*/
+    font-family: var(--texto);
+    font-weight: 300; 
     color: #FFF;
 }
-
-.blur{
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(6px) !important;
+/* PRELOADER */
+.spinner-grow{
+    color: var(--vermelho);
+}
+#preloader {
+    position: fixed !important;
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    background-color:var(--preto) !important; 
+    z-index:100000 !important; 
+}
+#preloader .inner {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;  
 }
 /* Header */
-
 header{
     width: 100%;
-    /* position: fixed; */
     top: 0px;
     background-color: var(--preto);
     opacity: 0.9;
@@ -45,8 +59,9 @@ header .container .sidebar-logo{
 }
 header .container .logo{
     color: var(--vermelho);
-    font-family: 'Arial Black', Times; /*TODO*/
+    font-family: var(--titulo) ;
     font-size: 2.5rem;
+    font-weight: 700;
     margin-left: 1rem;
     -webkit-transition: all 0.5s ;
     -moz-transition: all 0.5s;
@@ -60,6 +75,8 @@ header .container .navLink{
     margin-right: 1rem;
     width: 100%;
     font-size: 1.5rem;
+    font-family: var(--titulo);
+    font-weight: 700;
 }
 
 header .container .navLink:hover{
@@ -76,8 +93,7 @@ header .container .navLink:hover{
 .filme-pricipal{
     font-size: 1.3rem;
     color:#FFF;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/loki-banner.jpg');/*TODO*/
-    height: 100%;/*TODO*/
+    height: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column !important;
@@ -90,17 +106,21 @@ header .container .navLink:hover{
     margin-right: 2rem;
     margin-left: 2rem;
     width: 100%;
+    font-family: var(--texto);
+    font-weight: 300; 
 }
 
 .filme-pricipal .container .titulo{
     font-size: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*TODO*/
+    font-family: var(--titulo);
+    font-weight: 700;
     margin-top: 25%;
 }
 
 .filme-pricipal .container .descricao{
     margin-top: 1rem;
     text-align: justify;
+
 }
 
 .filme-pricipal .botoes{
@@ -124,10 +144,10 @@ header .container .navLink:hover{
     background-color: white;
     color: black;
     font-style: italic;
+    transition: all 0.7s;
 }
 
 .filme-pricipal .botoes i{
-    /* margin-left: 0.2rem; */
     margin-right: 8px;
 }
 
@@ -144,7 +164,8 @@ header .container .navLink:hover{
     padding-top: 2rem;
     color: #FFF;
     font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*TODO*/
+    font-family: var(--titulo);
+    font-weight: 700;
 }
 
  .box-filme{
@@ -154,6 +175,11 @@ header .container .navLink:hover{
     display: block;
     border-radius: 20px;
     padding: 10px;
+}
+
+.box-filme:hover{
+    border: #FFF groove 1px;
+    transition: all 0.7s;
 }
 
 .owl-prev, .owl-next {
@@ -171,7 +197,42 @@ header .container .navLink:hover{
     cursor: pointer;
     border-radius: 20px !important;
     margin: 1rem !important;
-    
 }
 
-
+.btn2,#btn-close,.modal-content{
+    color: #FFF !important;
+}
+#btn-close{
+    position: absolute;
+    left: 100%;
+}
+.modal-content{
+    align-items: center;
+}
+.btn2{
+    margin-top: 10px !important;
+    margin-left: 10px;
+    border: #FFF solid 1px !important;
+}
+.btn2:hover{
+    font-style: italic;
+    color: var(--preto) !important;
+    background-color: #FFF;
+    transition: all 0.7s;
+}
+.info_modal{
+    margin: 10px;
+    font-family: var(--texto);
+    font-weight: 300;
+}
+#modal_overview{
+    text-align: justify;
+    margin: 10px 0 10px 0 !important;
+}
+#modal_runtime,#modal_generos,#modal_produtora{
+    margin: 4px 0 4px 0 !important;
+}
+.modal-title{
+    font-family: var(--titulo) !important;
+    font-weight: 700;
+}
