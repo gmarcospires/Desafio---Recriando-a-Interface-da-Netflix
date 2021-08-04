@@ -20,7 +20,7 @@ https://fontawesome.com/
 
 https://getbootstrap.com/
 
-https://developers.themoviedb.org/3/getting-started
+https://developers.themoviedb.org/3/
 
 https://github.com/Matpires02/Netflix-dio
 
