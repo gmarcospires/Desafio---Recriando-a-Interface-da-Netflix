@@ -158,7 +158,11 @@ header .container .navLink:hover{
     position: relative;
     background-color: var(--preto);
     padding: 1rem;
+    display: flex;
 } 
+.carrossel-inner{
+    display: flex;
+}
 .subTitulo{
     padding-left: 2rem;
     padding-top: 2rem;
@@ -169,10 +173,10 @@ header .container .navLink:hover{
 }
 
  .box-filme{
-    max-height: 400px;
-    max-width: 400px;
+    /* max-height: 400px; */
+    /* max-width: 400px; */
     width: auto;
-    display: block;
+    display: flex;
     border-radius: 20px;
     padding: 10px;
 }

@@ -36,20 +36,17 @@ async function TMDElements(prop) {
         imagem.src =
           "https://image.tmdb.org/t/p/w600_and_h900_face" + element.poster_path;
 
-        imagem.setAttribute("class", "box-filme d-block w-100")
+        imagem.setAttribute("class", "box-filme w-100")
         imagem.alt = "Banner do filme " + element.title;
         divImagem.setAttribute("class", "item carousel-item itm");
 
 
         fazerModal({ id: ret.results[i].id, media_type: ret.results[i].media_type, prop: prop })
 
-        // info.appendChild(div);
         let el = "#modal" + element.id
         imagem.setAttribute("data-bs-toggle", "modal")
         imagem.setAttribute("data-bs-target", el)
-        // imagem.addEventListener('click',()=>{
-        //   document.getElementById("modal"+i).style.display = "block"
-        // })
+        
         divImagem.appendChild(imagem);
 
       }

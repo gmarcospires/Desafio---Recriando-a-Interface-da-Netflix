@@ -1,4 +1,4 @@
-async function carrossel() {
+ async function carrossel() {
     await TMDElements(1);
     await TMDElements(2);
     await TMDElements(3);
@@ -10,35 +10,36 @@ carrossel();
 let menuOpenBtn = document.querySelector(".container .sidebar-logo .logo_name");
 let navbar = document.querySelector(".container .myNavbar");
 
-let items = document.querySelectorAll('.carousel .carousel-item')
+// let items = document.querySelectorAll('.carousel .carousel-item');
+// //  debugger;
+// items.forEach((el) => {
+//     let minPerSlide;
+//     if (window.matchMedia("(max-width: 575.9px)").matches) {
+//         minPerSlide = 2;
+//     } else if (window.matchMedia("(min-width: 576px) and (max-width: 767.9px)").matches) {
+//         minPerSlide = 3;
+//     } else if (window.matchMedia("(min-width: 768px) and (max-width: 991.9px)").matches) {
+//         minPerSlide = 3;
+//     } else if (window.matchMedia("(min-width: 992px) and (max-width: 1199.9px)").matches) {
+//         minPerSlide = 3;
+//     } else if (window.matchMedia("(min-width: 1200px) and (max-width: 2559.9px)").matches) {
+//         minPerSlide = 7;
+//     }
+//     else {
+//         minPerSlide = 3;
+        
+//     }
 
-items.forEach((el) => {
-    let minPerSlide
-    if (window.matchMedia("(max-width: 575.9px) and and (orientation: portrait)").matches) {
-        minPerSlide = 2
-    } else if (window.matchMedia("(min-width: 576px) and (max-width: 767.9px)").matches) {
-        minPerSlide = 3
-    } else if (window.matchMedia("(min-width: 768px) and (max-width: 991.9px)").matches) {
-        minPerSlide = 3
-    } else if (window.matchMedia("(min-width: 992px) and (max-width: 1199.9px)").matches) {
-        minPerSlide = 3
-    } else if (window.matchMedia("(min-width: 1200px) and (max-width: 2559.9px)").matches) {
-        minPerSlide = 7
-    }
-    else {
-        minPerSlide = 3
-    }
-
-    let next = el.nextElementSibling
-    for (var i = 1; i < minPerSlide; i++) {
-        if (!next) {
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
+//     let next = el.nextElementSibling
+//     for (var i = 1; i < minPerSlide; i++) {
+//         if (!next) {
+//             next = items[0]
+//         }
+//         let cloneChild = next.cloneNode(true)
+//         el.appendChild(cloneChild.children[0])
+//         next = next.nextElementSibling
+//     }
+// })
 
 
 

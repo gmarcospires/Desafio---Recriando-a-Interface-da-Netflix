@@ -380,7 +380,8 @@
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 2559.9px) {
+
+@media screen and (min-width: 1200px) and (max-width: 2559.9px) {
     /* Header */
 
     header .container .navLink {
@@ -418,10 +419,9 @@
     }
 
     .box-filme {
-        display: flex;
         height: 100% !important;
         width: 100% !important;
-        max-height: 20.5vw;
+        max-height: 20.3vw;
         max-width: min-content;
     }
 
