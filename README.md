@@ -5,7 +5,9 @@ Olá! Bem vindo ao desafios "Recriando a Interface da Netflix" feito no Bootcamp
 Nete projeto, utilizei tecnologias de HTML, CSS, JS, além da API disponibilizada pela The Movie Database, para uma melhor seleção de filmes e séries.
 Foi testado no Chrome Versão 92.0.4515.131 e Microsoft Edge Versão 92.0.902.67. Firefox Versão 91.0 acontece alguns bugs, mas não interfere na funcionalidade.
 
+##### Imagens
 ![Imagem do Projeto](./img/index.png)
+
 ![Imagem do Projeto](./img/index_info.png)
 
 ## O Desafio
